@@ -9,7 +9,7 @@ class App extends React.Component {
   }
 
   callAPI() {
-    fetch("http://localhost:9000/testAPI")
+    fetch("https://react-node-api-sample.onrender.com/testAPI")
       .then((res) => res.text())
       .then((res) => this.setState({ apiResponse: res }));
   }
